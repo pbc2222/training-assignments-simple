@@ -1,5 +1,7 @@
 package eu.sig.training.ch02;
 
+class 
+
 public class BoardFactory {
     // tag::createBoard[]
     public Board createBoard(Square[][] grid) {
@@ -17,6 +19,7 @@ public class BoardFactory {
                     int dirY = (height + y + dir.getDeltaY()) % height;
                     Square neighbour = grid[dirX][dirY];
                     square.link(neighbour, dir);
+		    // pladder
                 }
             }
         }
